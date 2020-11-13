@@ -3,8 +3,44 @@
     margin: 0px;
 }
 
-h1 {
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: #759746;
+    padding: 2px;
+}
+
+.navbar > a {
+    text-decoration: none;
+    color: whitesmoke;
+    text-shadow: 0 0 5px black;
+    font-weight: bold;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#homeLink {
+    margin-right: auto;
+}
+
+.avatarContainer {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    color: firebrick;
-    font-family: 'Sriracha', cursive;
+    margin: 10px auto;
+}
+
+.avatar {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 75px;
+    justify-self: center;
+    align-self: center;
+}
+
+.webDevIcons {
+    font-size: 40px;
+    padding: 10px;
 }
