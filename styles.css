@@ -52,6 +52,31 @@
     padding: 10px;
 }
 
+.portfolioContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-content: center;
+}
+
+.portfolioItemContainer {
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+    margin: 5px;
+}
+
+.portfolioItemImage {
+    max-width: 150px;
+    max-height: 150px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.portfolioItemImage:hover {
+    box-shadow: 3px 3px 15px black;
+}
+
 footer {
     height: 100px;
     display: flex;
@@ -79,5 +104,15 @@ footer > a {
     .navbar > a {
         font-size: 16px;
         padding: 7px;
+    }
+
+    .portfolioContainer {
+        grid-template-columns: 1fr;
+    }
+
+    #copyright,
+    .socialMediaIcons {
+        font-size: 16px;
+        margin: 10px;
     }
 }
