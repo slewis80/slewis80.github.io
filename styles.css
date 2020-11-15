@@ -9,6 +9,7 @@
     justify-content: flex-end;
     background-color: #759746;
     padding: 2px;
+    border-bottom: 1px solid black;
 }
 
 .navbar > a {
@@ -23,6 +24,12 @@
 
 #homeLink {
     margin-right: auto;
+}
+
+#portfolioHeader {
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+    padding: 15px;
 }
 
 .avatarContainer {
@@ -43,4 +50,34 @@
 .webDevIcons {
     font-size: 40px;
     padding: 10px;
+}
+
+footer {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+footer > a {
+    text-decoration: none;
+    align-self: center;
+    justify-self: center;
+}
+
+#copyright,
+.socialMediaIcons {
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Balsamiq Sans', cursive;
+    margin: 15px;
+}
+
+@media only screen and (max-width: 450px) {
+    .navbar > a {
+        font-size: 16px;
+        padding: 7px;
+    }
 }
