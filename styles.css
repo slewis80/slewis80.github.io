@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     margin: 0px;
     font-family: 'Balsamiq Sans', cursive;
 }
@@ -10,7 +10,7 @@
     justify-content: flex-end;
     background-color: #759746;
     padding: 2px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #4e5f35;
 }
 
 .navbar > a {
@@ -19,7 +19,7 @@
     text-shadow: 0 0 5px black;
     font-weight: bold;
     font-family: 'Balsamiq Sans', cursive;
-    font-size: 20px;
+    font-size: 25px;
     padding: 10px;
 }
 
@@ -35,10 +35,11 @@
 }
 
 .avatarContainer {
+    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 10px auto;
+    padding: 20px auto;
 }
 
 .avatar {
@@ -47,11 +48,32 @@
     border-radius: 75px;
     justify-self: center;
     align-self: center;
+    padding: 25px;
 }
 
 .webDevIcons {
     font-size: 40px;
-    padding: 10px;
+}
+
+#aboutMe {
+    height: 400px;
+    background-color: #c6dba8;
+}
+
+#aboutMeContainer {
+    position: absolute;
+    right: 0;
+    background-color: whitesmoke;
+    border: 2px solid #4e5f35;
+    border-right: none;
+    border-radius: 5px;
+    height: 200px;
+    width: 45%;
+    margin: 70px 0;
+}
+
+#aboutMeContainer > p {
+    padding: 15px;
 }
 
 .portfolioLinks {
@@ -112,7 +134,8 @@
 }
 
 footer {
-    height: 100px;
+    height: 75px;
+    background-color: whitesmoke;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -140,6 +163,24 @@ footer > a {
         padding: 7px;
     }
 
+    #aboutMe {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    #aboutMeContainer {
+        position: static;
+        background-color: whitesmoke;
+        border: 2px solid #4e5f35;
+        border-radius: 5px;
+        height: 200px;
+        width: 75%;
+        justify-self: center;
+        align-self: center;
+    }    
+
     .portfolioContainer {
         grid-template-columns: 1fr;
     }
@@ -147,6 +188,6 @@ footer > a {
     #copyright,
     .socialMediaIcons {
         font-size: 16px;
-        margin: 10px;
+        margin: 5px;
     }
 }
