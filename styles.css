@@ -76,6 +76,10 @@
     padding: 15px;
 }
 
+main {
+    background-color: whitesmoke;
+}
+
 .portfolioLinks {
     display: flex;
     flex-direction: row;
