@@ -54,6 +54,13 @@
     padding: 10px;
 }
 
+.portfolioLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .portfolioContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -62,23 +69,42 @@
 }
 
 .portfolioLinkContainer {
+    display: inline-block;
     text-align: center;
     margin: 5px;
+}
+
+.portfolioLinkContainer > a > img {
+    max-width: 100px;
+    padding: 5px;
 }
 
 .portfolioItemContainer {
+    width: 300px;
     text-align: center;
     font-family: 'Balsamiq Sans', cursive;
-    margin: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 15px auto;
+}
+
+.portfolioItemContainer > h3 {
+    padding: 5px;
+}
+
+.portfolioItemContainer > div > p {
+    height: 150px;
+    padding: 10px;
+    text-align: center;
 }
 
 .portfolioItemImage {
-    max-width: 150px;
+    max-width: 250px;
     max-height: 150px;
     border: 1px solid black;
     padding: 5px;
     border-radius: 5px;
-    margin: 10px;
+    margin: 5px;
 }
 
 .portfolioItemImage:hover {
@@ -108,7 +134,7 @@ footer > a {
     margin: 15px;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 950px) {
     .navbar > a {
         font-size: 16px;
         padding: 7px;
