@@ -43,12 +43,19 @@
 }
 
 .avatar {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 225px;
+    max-height: 225px;
     border-radius: 75px;
     justify-self: center;
     align-self: center;
-    padding: 25px;
+    margin: 25px;
+    /* padding: 25px; */
+}
+
+.avatar:hover {
+    box-shadow: 3px 3px 15px black;
+    transform: rotate(360deg);
+    transition: all 1s ease-in-out;
 }
 
 .webDevIcons {
@@ -56,8 +63,8 @@
 }
 
 #aboutMe {
-    height: 400px;
-    background-color: #c6dba8;
+    height: 500px;
+    background-color: #cde0b2;
 }
 
 #aboutMeContainer {
@@ -67,13 +74,29 @@
     border: 2px solid #4e5f35;
     border-right: none;
     border-radius: 5px;
-    height: 200px;
+    height: auto;
     width: 45%;
     margin: 70px 0;
 }
 
+#aboutMeContainer:hover {
+    box-shadow: 3px 3px 15px black;
+    transform: rotate(-20deg);
+    transform-origin: 40% 175%;
+    transition: all 0.3s ease;
+}
+
 #aboutMeContainer > p {
     padding: 15px;
+    line-height: 1.5;
+}
+
+#aboutMeContainer > p::first-letter{
+    margin: 0 0 0 20px;
+    color:#4e5f35;
+    font-size:250%;
+    font-weight: bold;
+    line-height: 1;
 }
 
 main {
@@ -179,10 +202,18 @@ footer > a {
         background-color: whitesmoke;
         border: 2px solid #4e5f35;
         border-radius: 5px;
-        height: 200px;
+        height: auto;
         width: 75%;
+        margin: 15px auto;
         justify-self: center;
         align-self: center;
+    }    
+
+    #aboutMeContainer:hover {
+        box-shadow: 3px 3px 15px black;
+        transform: none;
+        transform-origin: none;
+        transition: all 0.3s ease;
     }    
 
     .portfolioContainer {
