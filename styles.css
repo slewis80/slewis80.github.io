@@ -1,55 +1,5 @@
 * {
-    /* box-sizing: border-box; */
-    margin: 0px;
-    font-family: 'Balsamiq Sans', cursive;
-}
-
-.navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    background-color: #759746;
-    padding: 2px;
-    border-bottom: 1px solid #4e5f35;
-}
-
-.navbar > a {
-    text-decoration: none;
-    color: whitesmoke;
-    text-shadow: 0 0 5px black;
-    font-weight: bold;
-    font-family: 'Balsamiq Sans', cursive;
-    font-size: 25px;
-    padding: 10px;
-}
-
-#homeLink {
-    margin-right: auto;
-}
-
-.portfolioHeader {
-    text-align: center;
-    color: firebrick;
-    padding: 15px;
-    margin: 10px;
-}
-
-.avatarContainer {
-    background-color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 20px auto;
-}
-
-.avatar {
-    max-width: 225px;
-    max-height: 225px;
-    border-radius: 75px;
-    justify-self: center;
-    align-self: center;
-    margin: 25px;
-    /* padding: 25px; */
+    box-sizing: border-box;
 }
 
 .avatar:hover {
@@ -62,38 +12,8 @@
     font-size: 40px;
 }
 
-#aboutMe {
-    height: 500px;
-    background-color: #cde0b2;
-}
-
-#aboutMeContainer {
-    position: absolute;
-    right: 0;
-    background-color: whitesmoke;
-    border: 2px solid #4e5f35;
-    border-right: none;
-    border-radius: 5px;
-    height: auto;
-    width: 45%;
-    margin: 70px 0;
-}
-
-#aboutMeContainer:hover {
-    box-shadow: 3px 3px 15px black;
-    transform: rotate(-20deg);
-    transform-origin: 40% 175%;
-    transition: all 0.3s ease;
-}
-
-#aboutMeContainer > p {
-    padding: 15px;
-    line-height: 1.5;
-}
-
-#aboutMeContainer > p::first-letter{
+.firstLetter{
     margin: 0 0 0 20px;
-    color:#4e5f35;
     font-size:250%;
     font-weight: bold;
     line-height: 1;
@@ -103,126 +23,26 @@ main {
     background-color: whitesmoke;
 }
 
-.portfolioLinks {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.icons-container {
+    min-height: 100px;
+    cursor: pointer;
 }
 
-.portfolioContainer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    align-content: center;
+.hover-zoomin {
+    font-size: 40px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
-.portfolioLinkContainer {
-    display: inline-block;
-    text-align: center;
-    margin: 5px;
-}
-
-.portfolioLinkContainer > a > img {
-    max-width: 100px;
-    padding: 5px;
-}
-
-.portfolioItemContainer {
-    width: 300px;
-    text-align: center;
-    font-family: 'Balsamiq Sans', cursive;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin: 15px auto;
-}
-
-.portfolioItemContainer > h3 {
-    padding: 5px;
-}
-
-.portfolioItemContainer > div > p {
-    height: 150px;
-    padding: 10px;
-    text-align: center;
-}
-
-.portfolioItemImage {
-    max-width: 250px;
-    max-height: 150px;
-    border: 1px solid black;
-    padding: 5px;
-    border-radius: 5px;
-    margin: 5px;
-}
-
-.portfolioItemImage:hover {
-    box-shadow: 3px 3px 15px black;
-}
-
-footer {
-    height: 75px;
-    background-color: whitesmoke;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-}
-
-footer > a {
-    text-decoration: none;
-    align-self: center;
-    justify-self: center;
-}
-
-#copyright,
-.socialMediaIcons {
-    color: black;
-    font-size: 25px;
-    font-weight: bold;
-    font-family: 'Balsamiq Sans', cursive;
-    margin: 15px;
-}
-
-@media only screen and (max-width: 950px) {
-    .navbar > a {
-        font-size: 16px;
-        padding: 7px;
-    }
-
-    #aboutMe {
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-    }
-
-    #aboutMeContainer {
-        position: static;
-        background-color: whitesmoke;
-        border: 2px solid #4e5f35;
-        border-radius: 5px;
-        height: auto;
-        width: 75%;
-        margin: 15px auto;
-        justify-self: center;
-        align-self: center;
-    }    
-
-    #aboutMeContainer:hover {
-        box-shadow: 3px 3px 15px black;
-        transform: none;
-        transform-origin: none;
-        transition: all 0.3s ease;
-    }    
-
-    .portfolioContainer {
-        grid-template-columns: 1fr;
-    }
-
-    #copyright,
-    .socialMediaIcons {
-        font-size: 16px;
-        margin: 5px;
-    }
+.hover-zoomin:hover {
+    padding-top: 0;
+    font-size: 100px;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
 }
