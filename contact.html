@@ -42,43 +42,50 @@
         </div>
     </nav>
 
-<!-- contact form -->
-<main class="container my-4 mx-auto">
+<!-- Head -->
     <div class="container text-center">
-        <h5 class="p-2">Use the form below to contact me, or simply email me at:<br/>
-            <a class="text-decoration-none text-success" href="mailto:SabrinaLewisDev@gmail.com">SabrinaLewisDev@gmail.com</a>
-        </h5>
+        <h1 class="p-2 my-3">Contact Me
+        </h1>
     </div>
 
-    <form action="https://formspree.io/f/xgerzvzy"
-        method="POST"
-        name="emailForm"
-        id="emailForm">
-        <div class="form-group col-md-9 mx-auto py-4">
-            <label class="col-form-label" for="name">Name: </label>
-            <div class="mx-auto">
-                <input type="text" name="name" id="name" class="form-control">
-            </div>
-            <label class="col-form-label" for="email">Email Address: </label>
-            <div class="mx-auto">
-                <input type="email" name="email" id="email" class="form-control">
-            </div>
-            <input type="hidden" name="_subject" value="SabrinaLewis.Dev Email Form Submission" />
-            <label class="col-form-label" for="message">Message: </label>
-            <div class="mx-auto">
-                <textarea name="message" id="message" rows="6" class="form-control"></textarea>
-            </div>
-            <div class="row">
-                <div class="mx-3 m-2">
-                    <button class="btn btn-success" id="submitBtn" type="submit">Submit</button>
+
+<!-- contact form -->
+    <main class="container my-4 col-md-7 mx-auto rounded-lg">
+
+        <form action="https://formspree.io/f/xgerzvzy"
+            method="POST"
+            name="emailForm"
+            id="emailForm">
+            <div class="form-group col-md-9 mx-auto py-4">
+
+                <label class="col-form-label" for="name">Name: </label>
+                <div class="mx-auto">
+                    <input type="text" name="name" id="name" class="form-control">
                 </div>
-                <div class="m-2">
-                    <button class="btn btn-success" id="resetBtn" type="reset">Reset Form</button>
+
+                <label class="col-form-label" for="email">Email Address: </label>
+                <div class="mx-auto">
+                    <input type="email" name="email" id="email" class="form-control">
+                </div>
+
+                <input type="hidden" name="_subject" value="SabrinaLewis.Dev Email Form Submission" />
+
+                <label class="col-form-label" for="message">Message: </label>
+                <div class="mx-auto">
+                    <textarea name="message" id="message" rows="6" class="form-control"></textarea>
+                </div>
+
+                <div class="row">
+                    <div class="my-3 col-md">
+                        <button class="btn btn-success btn-block" id="submitBtn" type="submit">Submit</button>
+                    </div>
+                    <!-- <div class="m-2">
+                        <button class="btn btn-success" id="resetBtn" type="reset">Reset Form</button>
+                    </div> -->
                 </div>
             </div>
-        </div>
-    </form>
-</main>
+        </form>
+    </main>
 
 <!-- pre-footer -->
     <div class="container text-center my-2">
@@ -94,18 +101,18 @@
     <footer class="navbar navbar-dark bg-dark navbar-expand-lg">
         <ul class="navbar-nav ml-auto mr-auto align-items-center">
             <li class="navbar-item">
-                <a class="navbar-brand" href="http://slewis80.github.io">
-                    <h3 id="copyright">&copy 2020 Sabrina Lewis</h3>
+                <a class="nav-link" href="http://slewis80.github.io">
+                    <h4 id="copyright">&copy 2020 Sabrina Lewis</h4>
                 </a>
             </li>
             <li class="navbar-item">
-                <a class="navbar-brand" href="https://www.linkedin.com/in/sabrinalewis/" target="_blank">
-                    <i class="devicon-linkedin-plain colored socialMediaIcons"></i>
+                <a class="nav-link" href="https://www.linkedin.com/in/sabrinalewis/" target="_blank">
+                    <i class="devicon-linkedin-plain"></i>
                 </a>
             </li>
             <li class="navbar-item">
-                <a class="navbar-brand" href="https://github.com/slewis80" target="_blank">
-                    <i class="devicon-github-plain colored socialMediaIcons"></i>
+                <a class="nav-link" href="https://github.com/slewis80" target="_blank">
+                    <i class="devicon-github-plain"></i>
                 </a>
             </li>
         </ul>
