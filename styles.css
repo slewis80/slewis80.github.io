@@ -15,12 +15,7 @@
 .firstLetter{
     margin: 0 0 0 20px;
     font-size:250%;
-    font-weight: bold;
     line-height: 1;
-}
-
-main {
-    background-color: whitesmoke;
 }
 
 .icons-container {
